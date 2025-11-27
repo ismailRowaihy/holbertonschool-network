@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# a script that shows attached ips
+
+ifconfig | awk '/inet / {print $2}'
